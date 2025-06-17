@@ -1,0 +1,23 @@
+# Bytecode y cachés de Python
+__pycache__/
+*.py[cod]
+
+# Entorno virtual
+venv/
+.env
+
+# Bases de datos locales (no se versionan)
+*.sqlite3
+
+# Logs y archivos generados en tiempo de ejecución
+logs/
+*.log
+
+# Configuración de editores y swaps
+.vscode/
+.idea/
+*.swp
+
+# Archivos temporales dentro de migraciones
+**/migrations/__pycache__/
+**/migrations/*.pyc
