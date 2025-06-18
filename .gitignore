@@ -21,3 +21,11 @@ logs/
 # Archivos temporales dentro de migraciones
 **/migrations/__pycache__/
 **/migrations/*.pyc
+
+# Archivos temporales de Microsoft Office (como ~$_archivo.docx)
+~$*
+
+# Archivos binarios innecesarios
+*.bak
+*.tmp
+*.orig
