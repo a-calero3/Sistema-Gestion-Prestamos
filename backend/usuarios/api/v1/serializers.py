@@ -21,7 +21,7 @@ class RegistroUsuarioSerializer(serializers.ModelSerializer):
         rol_id = validated_data.pop('rol_id')
 
         #Creamos el usuario usando el método adecuado para encriptar la contraseña
-        user = User.objects.create(**validated_data)
+        user = User.objects.create_user(**validated_data)
 
         #Creamos el perfil usuario asociado a ese usuario
         PerfilUsuario.objects.create(usuario = user, rol_id = rol_id)
